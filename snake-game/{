@@ -1,0 +1,6 @@
+import React, { useEffect } from 'react';
+import Phaser from 'phaser';
+import GameScene from '../scenes/GameScene';
+
+function Game({ difficulty, onGameOver }) {
+  useEffect((

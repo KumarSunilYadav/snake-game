@@ -1,0 +1,89 @@
+.start-screen {
+  text-align: center;
+  color: #00ff00;
+  animation: fadeIn 0.5s;
+}
+
+.start-screen h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #00ff00;
+  animation: glow 2s infinite;
+}
+
+.game-rules {
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.game-rules h3 {
+  font-size: 28px;
+  color: #ffff00;
+  margin-bottom: 15px;
+}
+
+.game-rules p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.difficulty-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.difficulty-buttons button {
+  padding: 20px 50px;
+  font-size: 24px;
+  background: #00ff00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.difficulty-buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #00ff00;
+}
+
+.gameover-screen {
+  text-align: center;
+  color: #ff0000;
+  animation: slideIn 0.5s;
+}
+
+.gameover-screen h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.final-score {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffff00;
+}
+
+.gameover-screen button {
+  padding: 15px 40px;
+  font-size: 20px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 20px #00ff00; }
+  50% { text-shadow: 0 0 40px #00ff00; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
