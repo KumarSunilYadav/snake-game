@@ -1,5 +1,8 @@
 import Phaser from 'phaser';
 import { saveScore } from '../utils/storage';
+this.load.audio('eat', process.env.PUBLIC_URL + '/assets/sounds/eat.mp3');
+this.load.audio('gameOver', process.env.PUBLIC_URL + '/assets/sounds/game-over.mp3');
+
 
 export default class SnakeGame extends Phaser.Scene {
   constructor() {
@@ -533,3 +536,4 @@ export default class SnakeGame extends Phaser.Scene {
     });
   }
 }
+
